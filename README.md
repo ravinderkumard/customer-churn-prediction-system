@@ -26,3 +26,11 @@ Build a predictive system that:
 - Prioritizes retention efforts based on customer value and churn probability
 - Automates personalized retention offers (discounts, upgrades, special plans)
 - Tracks ROI of retention campaigns
+
+
+## Day-to-Day Activities
+### Day 1-2: Setup
+- Set up project repository and environment
+- Define requirements.txt file
+- Define Business Understanding and Data Understanding documents
+
