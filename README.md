@@ -35,6 +35,7 @@ Build a predictive system that:
 - Define Business Understanding and Data Understanding documents
 
 ### Day 3: Day 3: Data Generation & Configuration System
+```
 customer-churn-prediction-system/
 ├── config/ # Configuration files
 │ └── config.yaml # Centralized project settings
@@ -45,7 +46,7 @@ customer-churn-prediction-system/
 │ └── test_config.py
 ├── requirements.txt # Python dependencies
 └── README.md # This file
-
+```
 
 #### **2. Configuration System Implemented**
 Created a flexible YAML-based configuration system that allows us to:
