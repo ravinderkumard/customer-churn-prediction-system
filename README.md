@@ -34,7 +34,7 @@ Build a predictive system that:
 - Define requirements.txt file
 - Define Business Understanding and Data Understanding documents
 
-### Day 3: Day 3: Data Generation & Configuration System
+### Day 3: Data Generation & Configuration System
 ```
 customer-churn-prediction-system/
 ├── config/ # Configuration files
