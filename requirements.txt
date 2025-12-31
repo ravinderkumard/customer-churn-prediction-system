@@ -1,0 +1,23 @@
+# =================================
+# DAY 3 REQUIREMENTS
+# Just enough to get started with EDA
+# =================================
+
+# Core Data Processing
+pandas
+numpy
+
+# Data Visualization
+matplotlib
+seaborn
+
+# Data Generation (for synthetic data)
+faker
+
+# Progress bars (optional but helpful)
+tqdm
+
+# Date/Time handling
+python-dateutil
+
+pyyaml

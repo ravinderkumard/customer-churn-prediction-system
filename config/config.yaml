@@ -1,0 +1,55 @@
+# config/config.yaml
+project:
+  name: "customer-churn-predictor"
+  version: "1.0.0"
+  description: "Predict customer churn using machine learning"
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  num_customers: 10000
+  start_date: "2022-01-01"
+  end_date: "2023-12-31"
+  files:
+    customers: "customers.csv"
+    transactions: "transactions.csv"
+    support_calls: "support_calls.csv"
+    usage_data: "usage_data.csv"
+    churn_target: "churn_target.csv"
+
+synthetic_data:
+  customers:
+    age:
+      min: 18
+      max: 75
+      mean: 42
+      std: 12
+    income_segments:
+      Low: 0.3
+      Medium: 0.5
+      High: 0.2
+    regions:
+      - "North"
+      - "South"
+      - "East"
+      - "West"
+    contract_types:
+      Monthly:
+        probability: 0.6
+        monthly_price_min: 20
+        monthly_price_max: 50
+      Annual:
+        probability: 0.3
+        monthly_price_min: 15
+        monthly_price_max: 40
+      TwoYear:
+        probability: 0.1
+        monthly_price_min: 10
+        monthly_price_max: 35
+
+churn:
+  churn_window_days: 90
+  churn_rate_target: 0.20
+
+random:
+  seed: 42

@@ -34,3 +34,52 @@ Build a predictive system that:
 - Define requirements.txt file
 - Define Business Understanding and Data Understanding documents
 
+### Day 3: Day 3: Data Generation & Configuration System
+customer-churn-prediction-system/
+├── config/ # Configuration files
+│ └── config.yaml # Centralized project settings
+├── data/ # Data storage
+│ ├── raw/ # Raw synthetic data
+├── scripts/ # Python scripts
+│ ├── create_synthetic_data.py
+│ └── test_config.py
+├── requirements.txt # Python dependencies
+└── README.md # This file
+
+
+#### **2. Configuration System Implemented**
+Created a flexible YAML-based configuration system that allows us to:
+
+- **Centralize all project settings** in one file
+- **Easily modify parameters** without changing code
+- **Ensure reproducibility** with fixed random seeds
+- **Define data generation rules** for synthetic data
+
+**Key Configuration Sections:**
+```yaml
+# config/config.yaml
+project:              # Project metadata
+data:                # Data paths and sizes
+synthetic_data:      # Data generation rules
+churn:              # Churn definition parameters
+random:             # Random seed for reproducibility
+```
+
+#### **3. Synthetic Data Generation**
+**Built a scalable data generator that creates:**
+- Customer demographics (age, income, region, contract type)
+- Transaction history (amounts, dates, types)
+- Customer support interactions (call types, durations)
+- Product usage patterns (daily usage, features accessed)
+
+**Data Characteristics:**
+- 10,000 customers (configurable)
+- Realistic distributions based on business scenarios
+- Temporal relationships between different data types
+- Configurable churn rate (default: 20%)
+
+**Data Generator Features:**
+- Reproducible with fixed random seed (42)
+- Temporal consistency across datasets
+- Business logic embedded in data generation
+- CSV output with proper formatting
